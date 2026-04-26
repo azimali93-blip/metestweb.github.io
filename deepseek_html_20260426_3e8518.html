@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACServiceUAE | Dubai AC Repair, Cleaning & Emergency</title>
+  <meta name="description" content="ACServiceUAE – professional AC repair, cleaning, maintenance & 24/7 emergency services in Dubai. Call 0542942959.">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: 'Segoe UI', Roboto, sans-serif; background:#f9fafb; color:#1e293b; }
+    .container { max-width:1200px; margin:0 auto; padding:0 20px; }
+    .hero { background:linear-gradient(135deg,#0f3b5e,#1b5a7a); color:white; padding:20px 0 60px; position:relative; overflow:hidden; }
+    .hero::before { content:""; position:absolute; top:0; right:0; width:40%; height:100%; background:url('https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=800') center/cover no-repeat; opacity:0.15; }
+    .navbar { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; position:relative; z-index:2; }
+    .logo { font-size:2rem; font-weight:700; color:#facc15; } .logo span { color:white; font-weight:400; }
+    .contact-top { display:flex; align-items:center; gap:20px; font-weight:600; background:rgba(255,255,255,0.15); padding:12px 20px; border-radius:50px; backdrop-filter:blur(10px); }
+    .contact-top a { color:white; text-decoration:none; font-size:1.3rem; display:flex; align-items:center; gap:8px; }
+    .emergency-badge { background:#dc2626; padding:6px 15px; border-radius:30px; font-size:0.9rem; animation:pulse 2s infinite; }
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.7}}
+    .hero-content { margin-top:50px; display:flex; flex-wrap:wrap; align-items:center; gap:30px; position:relative; z-index:2; }
+    .hero-text { flex:1 1 500px; } .hero-text h1 { font-size:2.8rem; font-weight:800; margin-bottom:20px; }
+    .hero-text h1 i { color:#facc15; font-style:normal; }
+    .hero-text p { font-size:1.2rem; opacity:0.95; margin-bottom:30px; }
+    .cta-group { display:flex; flex-wrap:wrap; gap:15px; }
+    .btn-primary { background:#facc15; color:#0f3b5e; font-weight:700; padding:15px 35px; border-radius:50px; text-decoration:none; box-shadow:0 10px 25px rgba(0,0,0,0.2); }
+    .btn-outline { background:transparent; border:2px solid white; color:white; padding:15px 30px; border-radius:50px; font-weight:600; text-decoration:none; }
+    .hero-image img { max-width:100%; border-radius:20px; box-shadow:0 25px 50px rgba(0,0,0,0.3); border:3px solid rgba(255,255,255,0.2); }
+    .services { padding:70px 0; background:white; }
+    .section-title { text-align:center; font-size:2.2rem; font-weight:700; color:#0f3b5e; margin-bottom:15px; }
+    .section-sub { text-align:center; color:#475569; margin-bottom:50px; }
+    .service-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:25px; }
+    .service-card { background:#f1f5f9; padding:25px 20px; border-radius:20px; text-align:center; transition:0.3s; }
+    .service-card:hover { background:white; border:1px solid #0f3b5e; box-shadow:0 15px 30px rgba(0,0,0,0.1); transform:translateY(-5px); }
+    .service-img { width:100%; height:160px; object-fit:cover; border-radius:12px; margin-bottom:15px; }
+    .service-icon { font-size:2.5rem; margin-bottom:10px; }
+    .service-card h3 { font-size:1.3rem; color:#0f3b5e; margin-bottom:8px; }
+    .cleaning-badge { background:#e0f2fe; color:#0369a1; font-size:0.8rem; font-weight:700; padding:4px 12px; border-radius:20px; }
+    .gallery-strip { background:#0f3b5e; padding:30px 0; text-align:center; }
+    .gallery-strip h3 { color:#facc15; margin-bottom:20px; }
+    .gallery-imgs { display:flex; flex-wrap:wrap; justify-content:center; gap:15px; }
+    .gallery-imgs img { width:180px; height:180px; object-fit:cover; border-radius:15px; border:3px solid rgba(255,255,255,0.3); }
+    .emergency-strip { background:#b91c1c; color:white; text-align:center; padding:25px; font-size:1.5rem; font-weight:700; display:flex; justify-content:center; align-items:center; flex-wrap:wrap; gap:20px; }
+    .emergency-strip a { color:#facc15; background:black; padding:10px 25px; border-radius:40px; text-decoration:none; }
+    .cleaning-highlight { background:#eff6ff; border-left:5px solid #0f3b5e; padding:25px; margin:30px 0; border-radius:12px; display:flex; align-items:center; gap:20px; }
+    .cleaning-highlight img { width:120px; height:120px; object-fit:cover; border-radius:15px; }
+    .why-us { padding:70px 0; background:#f8fafc; }
+    .features { display:flex; flex-wrap:wrap; gap:30px; justify-content:center; margin-top:40px; }
+    .feature-item { flex:1 1 200px; background:white; padding:30px; border-radius:20px; text-align:center; box-shadow:0 10px 20px rgba(0,0,0,0.03); }
+    .footer { background:#0f3b5e; color:#e2e8f0; padding:40px 0 20px; text-align:center; }
+    .footer .contact-info a { color:#facc15; text-decoration:none; font-size:1.4rem; }
+    @media(max-width:768px){ .hero-text h1{font-size:2rem;} .navbar{flex-direction:column;gap:15px;} }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">AC<span>ServiceUAE</span></div>
+        <div class="contact-top">
+          <span class="emergency-badge">⚡ 24/7 Emergency</span>
+          <a href="tel:0542942959">📞 0542942959</a>
+        </div>
+      </nav>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Dubai's <i>Cooling & Cleaning Experts</i></h1>
+          <p>Professional AC repair, deep cleaning & emergency services at your doorstep. Same-day response across Dubai.</p>
+          <div class="cta-group">
+            <a href="tel:0542942959" class="btn-primary">📞 Call Now: 0542942959</a>
+            <a href="#services" class="btn-outline">Our Services</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=600" alt="AC technician" onerror="this.src='https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600'">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="gallery-strip">
+    <div class="container">
+      <h3>🧑‍🔧 Our Technicians at Work</h3>
+      <div class="gallery-imgs">
+        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=300" alt="technician">
+        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=300" alt="hvac">
+        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=300" alt="cleaning">
+        <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=300" alt="repair">
+      </div>
+    </div>
+  </div>
+  <div class="emergency-strip">
+    🆘 AC Emergency? We're ready 24/7 
+    <a href="tel:0542942959">Call 0542942959</a>
+  </div>
+  <div class="services" id="services">
+    <div class="container">
+      <h2 class="section-title">Complete AC Care – Cleaning, Repair & More</h2>
+      <p class="section-sub">We specialize in thorough AC cleaning alongside all repair and maintenance needs.</p>
+      <div class="cleaning-highlight">
+        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=200" alt="cleaning">
+        <p><strong style="font-size:1.4rem;color:#0f3b5e;">Professional AC Cleaning</strong><br>Deep coil cleaning, sanitization & odor removal.</p>
+      </div>
+      <div class="service-grid">
+        <div class="service-card"><img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400" class="service-img"><div class="service-icon">🧹🧽</div><h3>AC Deep Cleaning</h3><p>Full disassembly, coil wash & filter clean.</p><span class="cleaning-badge">Popular</span></div>
+        <div class="service-card"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400" class="service-img"><div class="service-icon">🛡️💧</div><h3>Sanitization</h3><p>Anti-bacterial spray & mold removal.</p></div>
+        <div class="service-card"><img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=400" class="service-img"><div class="service-icon">🔧</div><h3>AC Repair</h3><p>Fast diagnosis for all major brands.</p></div>
+        <div class="service-card"><img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400" class="service-img"><div class="service-icon">🏠</div><h3>Home Service</h3><p>Split, window & central AC care.</p></div>
+        <div class="service-card"><img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400" class="service-img"><div class="service-icon">⚠️</div><h3><span style="color:#dc2626;">Emergency AC</span></h3><p>24/7 – arrive within 60 min.</p></div>
+        <div class="service-card"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400" class="service-img"><div class="service-icon">❄️</div><h3>Gas Refill</h3><p>Refrigerant top-up & leak check.</p></div>
+        <div class="service-card"><img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=400" class="service-img"><div class="service-icon">🧰</div><h3>Maintenance</h3><p>Annual contracts & tune-ups.</p></div>
+        <div class="service-card"><img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400" class="service-img"><div class="service-icon">🏢</div><h3>Commercial AC</h3><p>Office & villa solutions.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="why-us">
+    <div class="container">
+      <h2 class="section-title">Why ACServiceUAE?</h2>
+      <div class="features">
+        <div class="feature-item"><span>🧼</span><h3>Deep Clean Pros</h3><p>Specialized equipment.</p></div>
+        <div class="feature-item"><span>⏱️</span><h3>Same-Day</h3><p>Urgent calls prioritized.</p></div>
+        <div class="feature-item"><span>⭐</span><h3>5-Star Techs</h3><p>Licensed & insured.</p></div>
+        <div class="feature-item"><span>💰</span><h3>Fair Pricing</h3><p>Upfront, no hidden fees.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <div style="font-size:2rem;font-weight:700;color:white;">AC<span style="color:#facc15;">ServiceUAE</span></div>
+      <p style="font-size:1.2rem;">📞 <a href="tel:0542942959">0542942959</a> • Dubai, UAE</p>
+      <p style="margin-top:20px;opacity:0.7;">© 2025 ACServiceUAE – Professional AC Services</p>
+    </div>
+  </div>
+</body>
+</html>
